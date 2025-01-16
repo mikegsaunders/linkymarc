@@ -1,0 +1,150 @@
+<collection>
+	<record>
+		<controlfield tag="001">
+			9930026243804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Mary,
+			</subfield>
+			<subfield code="c">
+				Queen of Scots,
+			</subfield>
+			<subfield code="d">
+				1542-1587.
+			</subfield>
+			<subfield code="1">
+				https://isni.org/isni/0000000121035913
+			</subfield>
+			<subfield code="1">
+				https://www.wikidata.org/wiki/Q131412
+			</subfield>
+			<subfield code="9">
+				LCNACO|Mary Queen of Scots
+			</subfield>
+			<subfield code="z">ISNIQAPASS</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				The affecting narrative and surprising adventures of Mary Stuart, Queen of Scotland.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+			9941276133804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Campbell, John,
+			</subfield>
+			<subfield code="d">
+				1708-1775.
+			</subfield>
+			<subfield code="1">
+				https://isni.org/isni/0000000118760698
+			</subfield>
+			<subfield code="1">
+				https://www.wikidata.org/wiki/Q3181178
+			</subfield>
+			<subfield code="9">
+				LCNACO|John Campbell
+			</subfield>
+			<subfield code="z">ISNIQAPASS</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				Lives of the British admirals: containing a new and accurate naval history, from the earliest periods. By Dr. J. Campbell. With a continuation down to ... 1779, ... Written under the inspection of Doctor Berkenhout. ... In four volumes.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+			9912960213804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Adamson, Donald,
+			</subfield>
+			<subfield code="d">
+				1943-
+			</subfield>
+			<subfield code="1">
+				https://isni.org/isni/0000000110060929
+			</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				Biology
+			</subfield>
+			<subfield code="p">
+				Teacher's notes /
+			</subfield>
+			<subfield code="c">
+				Donald Adamson, Martin Bates.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+			992523783804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Dunbar, William,
+			</subfield>
+			<subfield code="d">
+				1460?-1520?
+			</subfield>
+			<subfield code="1">
+				https://isni.org/isni/0000000118619977
+			</subfield>
+			<subfield code="1">
+				https://www.wikidata.org/wiki/Q647150
+			</subfield>
+			<subfield code="9">
+				NLS|William Dunbar
+			</subfield>
+			<subfield code="z">ISNIQAPASS</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				The poems of William Dunbar /
+			</subfield>
+			<subfield code="c">
+				edited by W. Mackay Mackenzie.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+			999795823804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Aytoun, William Edmondstoune,
+			</subfield>
+			<subfield code="d">
+				1813-1865.
+			</subfield>
+			<subfield code="1">
+				https://isni.org/isni/0000000118759320
+			</subfield>
+			<subfield code="1">
+				https://www.wikidata.org/wiki/Q771270
+			</subfield>
+			<subfield code="9">
+				NLS|William Edmondstoune Aytoun
+			</subfield>
+			<subfield code="z">ISNIQAPASS</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				The ballads of Scotland /
+			</subfield>
+			<subfield code="c">
+				edited by W.E. Aytoun.
+			</subfield>
+		</datafield>
+	</record>
+</collection>
