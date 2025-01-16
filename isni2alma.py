@@ -18,6 +18,10 @@ for child in root:
             if subchild.tag == "controlfield":
                 if subchild.attrib["tag"] == "001":
                     mmsID = subchild.text.strip()
+                    # probably a better way to do this bit:
+                    # if subchild.tag == "datafield":
+                    #     if subchild.attrib["tag"] == "100":
+                    #     etc
 
                     # get alma rec from api
                     url = f"https://api-eu.hosted.exlibrisgroup.com/almaws/v1/bibs/{mmsID}?apikey={apiKey}"
@@ -26,12 +30,13 @@ for child in root:
                         xml_content = r.content.decode("utf-8")
                         xml_file_like = StringIO(xml_content)
                         records = pymarc.parse_xml_to_array(xml_file_like)
-
-                        isni = "shisni"
                         for record in records:
-                            linky_isni = record.get("100").get("1")
-                            if linky_isni is None:
-                                record.add_ordered_field(
-                                    subfields=[pymarc.Subfield(code="1", value=isni)],
-                                )
-                                print(record["100"])
+                            field100 = record.get("100")
+                            isni = "shisni"
+                            wiki = "shiski"
+                            field100_1 = field100.get_subfields("1")
+                            if "isni" not in field100_1:
+                                field100.addsubfield("1", isni)
+                            if "wiki" not in field100_1:
+                                field100.addsubfield("1", wiki)
+                            print(record["100"])
