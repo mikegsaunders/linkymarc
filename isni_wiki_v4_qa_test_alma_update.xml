@@ -147,4 +147,82 @@
 			</subfield>
 		</datafield>
 	</record>
+	<record>
+		<controlfield tag="001">
+            99116877950504341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+                Wilson, Alistair,
+			</subfield>
+			<subfield code="d">
+                1939-
+			</subfield>
+			<subfield code="e">
+                author.
+			</subfield>
+			<subfield code="z">
+                ISNIQAFAIL
+			</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+                Behind the paddle /
+			</subfield>
+			<subfield code="c">
+                by Alistair Wilson.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+            9980999923804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+                Gordon, Richard,
+			</subfield>
+			<subfield code="d">
+                1947-2009.
+			</subfield>
+			<subfield code="z">
+                ISNIQAFAIL
+			</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+                The complete Moray rambler :
+			</subfield>
+			<subfield code="b">
+                walks &amp; history of the north-east /
+			</subfield>
+			<subfield code="c">
+                by Richard Gordon.
+			</subfield>
+		</datafield>
+	</record>
+	<record>
+		<controlfield tag="001">
+            99116554278904341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+                Keenan, David,
+			</subfield>
+			<subfield code="d">
+                1971-
+			</subfield>
+			<subfield code="e">
+                author.
+			</subfield>
+		</datafield>
+		<datafield tag="245">
+			<subfield code="a">
+                Xstabeth /
+			</subfield>
+			<subfield code="c">
+                David Keenan.
+			</subfield>
+		</datafield>
+	</record>
 </collection>
