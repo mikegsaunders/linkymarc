@@ -6,7 +6,7 @@ from io import StringIO
 
 # variables
 apiKey = os.environ.get("ALMA_API_SANDBOX")
-headers = {"Accept": "application/xml"}
+headers = {"Accept": "application/xml", "Content-Type": "application/xml"}
 
 
 tree = ET.parse("isni_wiki_v4_qa_test_alma_update.xml")
@@ -59,6 +59,7 @@ for child in root:
                 bib_element = ET.Element("bib")
                 bib_element.append(xml_element)
                 xml_with_bib = ET.tostring(bib_element, encoding="utf-8")
-                print(xml_with_bib)
                 # send to alma
-                # r = requests.put(url, data=xml, headers=headers)
+                r = requests.put(url, data=xml_with_bib, headers=headers)
+                if r.status_code != 200:
+                    print(r.text)
