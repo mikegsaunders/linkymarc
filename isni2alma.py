@@ -27,7 +27,9 @@ for child in root:
                 isni = each.text.strip()
             if "wiki" in each.text.strip():
                 wiki = each.text.strip()
-        # print(mmsID, isni, wiki, LOD_source)
+        # skip if nothing new to add
+        if isni == "" and qa == "":
+            continue
         # get alma rec from api
         url = f"https://api-eu.hosted.exlibrisgroup.com/almaws/v1/bibs/{mmsID}?apikey={apiKey}"
         r = requests.get(url, headers=headers)
