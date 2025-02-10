@@ -11,6 +11,8 @@ headers = {"Accept": "application/xml", "Content-Type": "application/xml"}
 # counters
 total = 0
 progress = 0
+existing_isni = 0
+no_LOD = 0
 
 
 tree = ET.parse("isni_wiki_v4_qa_test_alma_update.xml")
@@ -35,6 +37,7 @@ for child in root:
         # skip if nothing new to add
         if isni == "" and qa == "":
             progress += 1
+            no_LOD += 1
             continue
         # get alma rec from api
         url = f"https://api-eu.hosted.exlibrisgroup.com/almaws/v1/bibs/{mmsID}?apikey={apiKey}"
@@ -58,6 +61,7 @@ for child in root:
                     if qa != "":
                         field100.add_subfield("z", qa)
                 else:
+                    existing_isni += 1
                     if len(field100_z) == 0:
                         field100.add_subfield("z", "ISNIQAPASS_HUMAN")
                 if not any("wiki" in subfield for subfield in field100_1):
@@ -76,4 +80,10 @@ for child in root:
                 progress += 1
                 if r.status_code != 200:
                     print(r.text)
-    print(f"\rProgress: {progress}/{total} records", end="")
+    print(
+        f"\rProgress: {progress}/{total} records, {existing_isni} recs with existing ISNI, {no_LOD} recs with no linked data",
+        end="",
+    )
+total_skipped = existing_isni + no_LOD
+updated_records = progress - total_skipped
+print(f"\n{updated_records} records updated with linked data")
